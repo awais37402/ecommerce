@@ -1,0 +1,170 @@
+/* General Styles */
+.products-section {
+    text-align: center;
+    margin: 50px 0;
+    padding: 0 20px;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.products-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 30%;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.product-name {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.product-price {
+    font-size: 1.1rem;
+    color: #00a4a6;
+    font-weight: bold;
+}
+
+/* Modal Styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 30%; /* Set width to 30% of the screen */
+    max-width: 600px; /* Max width to ensure it's not too big */
+    position: relative; /* Allow positioning the close button inside */
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.modal-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.modal-price {
+    font-size: 1.25rem;
+    color: #00a4a6;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.modal-details {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Close Button inside Modal */
+.close-btn {
+    font-size: 2rem;
+    color: #333;
+    position: absolute;
+    top: 10px; /* Adjusted for better positioning */
+    right: 10px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+}
+
+.close-btn:hover {
+    color: #e04343;
+}
+
+/* See More Button */
+.see-more-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.see-more-btn {
+    padding: 10px 30px;
+    background-color: #e04343;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.see-more-btn:hover {
+    background-color: #e04343;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-card {
+        width: 45%;
+    }
+
+    .modal-content {
+        width: 50%; /* Adjust modal width to fit medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        width: 100%;
+    }
+
+    .modal-content {
+        width: 80%; /* Adjust modal width to fit small screens */
+    }
+}
