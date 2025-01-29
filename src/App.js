@@ -5,6 +5,7 @@ import About from './About';
 import Contact from './Contact';
 import Footer from './Footer';
 import Product from './Product'; // Import the Product.js
+import WhyUs from './WhyUs'; // Rename the import to avoid conflict
 import './styles.css';
 import './App.css';
 
@@ -41,6 +42,8 @@ function App() {
 
       {/* Display products here */}
       <Product /> {/* This will show the product list */}
+
+       <WhyUs />
 
       {/* Contact Section */}
       <Contact />
