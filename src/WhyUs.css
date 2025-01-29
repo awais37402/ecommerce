@@ -1,0 +1,107 @@
+#why-us {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: 600;
+  }
+  
+  .why-us-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    max-width: 1200px;  /* Restrict maximum width for large screens */
+    margin: 0 auto;
+  }
+  
+  .why-us-item {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 300px;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .why-us-item.highlight {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .why-us-item h3 {
+    font-size: 1.75rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  
+  .why-us-item p {
+    font-size: 1rem;
+    color: #777;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 1024px) {
+    .why-us-container {
+      gap: 20px;  /* Reduce gap on smaller screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #why-us {
+      padding: 60px 10px;
+    }
+  
+    h2 {
+      font-size: 2rem;  /* Reduce heading size on smaller screens */
+    }
+  
+    .why-us-container {
+      flex-direction: column;
+      gap: 20px;
+      padding: 0 15px;
+    }
+  
+    .why-us-item {
+      width: 90%;  /* Full-width on small screens */
+      margin: 0 auto;
+      padding: 25px;
+    }
+  
+    .why-us-item h3 {
+      font-size: 1.5rem;  /* Smaller title font size */
+    }
+  
+    .why-us-item p {
+      font-size: 0.95rem;  /* Smaller paragraph font size */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 1.75rem;  /* Further reduce heading size for very small screens */
+    }
+  
+    .why-us-item {
+      padding: 20px;
+    }
+  
+    .why-us-item h3 {
+      font-size: 1.25rem;  /* Adjust title font size */
+    }
+  
+    .why-us-item p {
+      font-size: 0.9rem;  /* Adjust paragraph font size */
+    }
+  }
+  
