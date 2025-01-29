@@ -24,14 +24,14 @@ const Header = () => {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="mobile-menu">
-          <span className="close-btn" onClick={toggleMenu}>
+          <span className="close-menu-btn" onClick={toggleMenu}>
             &times;
           </span>
           <nav className="nav-links">
-          <a href="./App" className="active">Home</a>
-        <a href="#product">Shop</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+            <a href="./App" className="active">Home</a>
+            <a href="#product">Shop</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
           </nav>
         </div>
       )}
